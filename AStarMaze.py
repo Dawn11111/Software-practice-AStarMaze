@@ -96,17 +96,6 @@ class A_Star:
     def __bindEvents(self):
         self.root.bind("<Return>", self.quite)  # 退出程序
 
-        for i in range(self.width):
-            for j in range(self.height):
-                # 生成通路
-                node = self.canvas.create_rectangle(i * 10 + 50 - self.__r,
-                                               j * 10 + 50 - self.__r, i * 10 + 50 + self.__r,
-                                               j * 10 + 50 + self.__r,
-                                               fill="#00ff00",  # 填充绿色
-                                               outline="#ffffff",  # 轮廓白色
-                                               tags="node",
-                                               )
-
     # 退出程序
     def quite(self, evt):
         self.root.destroy()

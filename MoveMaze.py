@@ -9,7 +9,7 @@ mz = t.Screen()
 # 设置长宽
 mz.setup(520,400)
 # 设置背景色
-mz.bgcolor('black')
+mz.bgcolor('#EBEBEB')
 # 设置标题
 mz.title('MoveMaze')
 
